@@ -125,7 +125,7 @@ The implemented architecture is based on the original Vision Transformer from:
 
     # build ggml and vit 
     mkdir build && cd build
-    cmake .. && make -j4
+    cmake .. && ninja
 
     # run inference
     ./bin/vit -t 4 -m ../ggml-model-f16.gguf -i ../assets/tench.jpg
